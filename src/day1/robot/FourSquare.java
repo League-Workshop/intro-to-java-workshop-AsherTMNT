@@ -5,10 +5,21 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class FourSquare {
 	
-	// 2. Create a new Robot
+	Robot r2d2=new Robot();
+	
 	
 
 	void go() {
+		r2d2.setSpeed(10);
+		r2d2.penDown();
+		for(int i=0;i<4;i++){
+		r2d2.setPenWidth(5);
+		r2d2.setRandomPenColor();
+		r2d2.move(100);
+		r2d2.turn(90);
+		}
+		
+		
 		// 4. Make the robot move as fast as possible
 
 		// 5. Set the pen width to 5
